@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import logo from './src\assets\MOBDOC-LOG.svg'
+
+
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -20,14 +21,7 @@ function Navbar() {
       <nav className="relative mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
 
-         <Link to="/" className="flex items-center">
-          <img
-            src="/"
-            alt="MOBDOC - Mobile Repairing and Training Institute"
-            className="h-12 w-auto object-contain sm:h-14"
-          />
-        </Link>
-        {/* <a
+        <a
           href="#"
           onClick={closeMenu}
           className="flex shrink-0 items-center gap-2.5"
@@ -44,7 +38,7 @@ function Navbar() {
               REPAIR · LEARN · BUILD
             </p>
           </div>
-        </a> */}
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-6 lg:flex xl:gap-8">
