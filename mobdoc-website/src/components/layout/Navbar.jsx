@@ -1,7 +1,4 @@
 import { useState } from "react";
-
-
-
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -21,24 +18,56 @@ function Navbar() {
       <nav className="relative mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
 
-        <a
+        <Link
           href="#"
           onClick={closeMenu}
           className="flex shrink-0 items-center gap-2.5"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-400 text-lg font-black text-black">
-            M
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-slate-950">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="5" y="2" width="14" height="20" rx="2" />
+              <path d="M11 18h2" />
+            </svg>
           </div>
 
-          <div>
+          {/* <div>
             <h1 className="text-lg font-extrabold tracking-wider text-white sm:text-xl">
               MOB<span className="text-emerald-400">DOC</span>
             </h1>
             <p className="text-[9px] tracking-[0.12em] text-slate-400 sm:text-[10px]">
               REPAIR · LEARN · BUILD
             </p>
-          </div>
-        </a>
+          </div> */}
+           <div>
+                <h2 className="text-2xl font-bold tracking-wide text-white">
+                  MOB<span className="text-emerald-400">DOC</span>
+                </h2>
+                <p className="text-xs text-slate-400">Repair • Learn • Build</p>
+              </div>
+        </Link>
+
+        {/* <Link
+          to="/"
+          onClick={closeMenu}
+          className="flex shrink-0 items-center gap-2.5"
+        >
+          <img
+            src={logo}
+            alt="MOBDOC Logo"
+            className="h-12 w-auto max-w-[180px] object-contain"
+          />
+        </Link> */}
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-6 lg:flex xl:gap-8">
