@@ -3,7 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faLocationDot, faLocation, faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faLocationDot,
+  faLocation,
+  faLocationArrow,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faFacebook,
@@ -24,7 +29,6 @@ const courseLinks = [
   { name: "Advanced Training", path: "/courses" },
   { name: "Enquire Now", path: "/contact" },
 ];
-
 
 const socialLinks = [
   {
@@ -144,7 +148,7 @@ function Footer() {
                     className="text-xl text-emerald-400 transition-colors hover:text-white"
                   />
                   {/* <span className="text-emerald-400">☎</span> */}
-                  <span>Call Us</span>
+                  <span>+91 7709815816</span>
                 </a>
               </li>
 
@@ -155,7 +159,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 transition-colors hover:text-emerald-400"
                 >
-                     <FontAwesomeIcon
+                  <FontAwesomeIcon
                     icon={faWhatsapp}
                     className="text-xl text-emerald-400 transition-colors hover:text-white"
                   />
@@ -165,17 +169,19 @@ function Footer() {
               </li>
 
               <li>
-                <Link
-                  to="/contact"
+                <a
+                href="https://www.google.com/maps/place/Mob+Doc+Mobile+Repair+%26+Training+Institute/@18.1627173,74.5872591,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc3a17f9fd122c7:0x112b4e5448b821d8!8m2!3d18.1627173!4d74.5872591!16s%2Fg%2F11f9j8h7h7?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-start gap-3 transition-colors hover:text-emerald-400"
                 >
-                     <FontAwesomeIcon
+                  <FontAwesomeIcon
                     icon={faLocationDot}
                     className="text-xl text-emerald-400 transition-colors hover:text-white"
                   />
                   {/* <span className="text-emerald-400">⌖</span> */}
-                  <span>Shop Location</span>
-                </Link>
+                  <span>near VirShaiv Mangal Karyalay, Sahyog Society, Baramati, Maharashtra 413102</span>
+                </a>
               </li>
             </ul>
 
@@ -192,7 +198,7 @@ function Footer() {
                   title={social.name}
                   className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 text-md font-bold text-slate-300 transition-all duration-200 hover:border-emerald-500 hover:bg-emerald-500 hover:text-slate-950"
                 >
-                   <FontAwesomeIcon icon={social.icon} />
+                  <FontAwesomeIcon icon={social.icon} />
                 </a>
               ))}
             </div>
@@ -208,8 +214,7 @@ function Footer() {
           <p className="text-sm text-slate-500">
             Built with <span className="text-emerald-400">♥</span> for
             technology and learning.
-          </p> 
-          
+          </p>
         </div>
       </div>
     </footer>
