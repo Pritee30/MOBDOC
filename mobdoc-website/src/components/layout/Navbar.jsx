@@ -8,7 +8,7 @@ function Navbar() {
 
   const links = [
     { label: "Services", href: "#services" },
-    { label: "Courses", href: "#courses" },
+    { label: "Courses", href: "/courses" },
     { label: "about", href: "/about" },
     { label: "Contact", href: "#contact" },
   ];
