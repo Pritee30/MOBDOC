@@ -7,10 +7,10 @@ function Navbar() {
   const closeMenu = () => setMenuOpen(false);
 
   const links = [
-    { label: "Services", href: "#services" },
+    { label: "Services", href: "/services" },
     { label: "Courses", href: "/courses" },
     { label: "about", href: "/about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (

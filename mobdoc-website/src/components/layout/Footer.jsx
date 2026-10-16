@@ -211,8 +211,8 @@ function Footer() {
             © {currentYear} MOBDOC. All rights reserved.
           </p>
 
-          <p className="text-sm text-slate-500">
-            Built with <span className="text-emerald-400">♥</span> for
+          <p className="text-xs text-slate-500">
+            Built with <span className="text-emerald-400 text-md">♥</span> for
             technology and learning.
           </p>
         </div>

@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from "react";
 
 function Hero() {
   return (
@@ -15,16 +14,13 @@ function Hero() {
 
           <h2 className="max-w-xl text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             Repair Smarter.
-            <span className="mt-2 block text-emerald-400">
-              Learn Better.
-            </span>
+            <span className="mt-2 block text-emerald-400">Learn Better.</span>
             Build Your Future.
           </h2>
 
           <p className="mt-6 max-w-lg text-base leading-8 text-slate-400 md:text-lg">
-            Professional mobile repairing services and practical
-            technical training designed to turn skills into
-            real-world opportunities.
+            Professional mobile repairing services and practical technical
+            training designed to turn skills into real-world opportunities.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
@@ -76,7 +72,7 @@ function Hero() {
             </div>
 
             <div className="my-6 grid grid-cols-2 gap-4">
-              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <div className="rounded-2xl border border-white/10 bg-white/3 p-5">
                 <span className="text-3xl">🔧</span>
                 <h4 className="mt-4 font-bold text-white">Repair Lab</h4>
                 <p className="mt-2 text-sm leading-6 text-slate-400">
@@ -98,16 +94,15 @@ function Hero() {
                 YOUR NEXT SKILL STARTS HERE
               </p>
               <p className="mt-2 text-sm leading-6 text-slate-300">
-                Explore our courses, discover our services, and
-                see what you can build with the right skills.
+                Explore our courses, discover our services, and see what you can
+                build with the right skills.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
-
+export default Hero;

@@ -117,7 +117,7 @@ function Courses() {
                     </svg>
                   </div>
 
-                  <span className="text-3xl font-bold text-slate-800 transition group-hover:text-emerald-500/30">
+                  <span className="text-4xl font-bold text-slate-800 transition group-hover:text-emerald-500/30">
                     {course.number}
                   </span>
                 </div>
