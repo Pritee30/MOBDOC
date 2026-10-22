@@ -7,6 +7,7 @@ function Navbar() {
   const closeMenu = () => setMenuOpen(false);
 
   const links = [
+    { label: "Home", href: "/home" },
     { label: "Services", href: "/services" },
     { label: "Courses", href: "/courses" },
     { label: "about", href: "/about" },
@@ -41,14 +42,7 @@ function Navbar() {
             </svg>
           </div>
 
-          {/* <div>
-            <h1 className="text-lg font-extrabold tracking-wider text-white sm:text-xl">
-              MOB<span className="text-emerald-400">DOC</span>
-            </h1>
-            <p className="text-[9px] tracking-[0.12em] text-slate-400 sm:text-[10px]">
-              REPAIR · LEARN · BUILD
-            </p>
-          </div> */}
+         
            <div>
                 <h2 className="text-2xl font-bold tracking-wide text-white">
                   MOB<span className="text-emerald-400">DOC</span>
@@ -57,17 +51,7 @@ function Navbar() {
               </div>
         </Link>
 
-        {/* <Link
-          to="/"
-          onClick={closeMenu}
-          className="flex shrink-0 items-center gap-2.5"
-        >
-          <img
-            src={logo}
-            alt="MOBDOC Logo"
-            className="h-12 w-auto max-w-[180px] object-contain"
-          />
-        </Link> */}
+      
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-6 lg:flex xl:gap-8">
@@ -79,14 +63,16 @@ function Navbar() {
             >
               {link.label}
             </a>
-          ))}
+          ))} 
 
-          <a
-            href="#courses"
+          
+
+          <Link
+            to="/courses"
             className="rounded-lg bg-emerald-400 px-4 py-2.5 text-sm font-bold text-[#07110D] transition hover:bg-emerald-300"
           >
             Explore Courses
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
