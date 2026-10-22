@@ -70,11 +70,21 @@ function Contact() {
 
       setFormData(initialFormData);
     } catch (error) {
+      //  catch (error) {
+      //   console.error("EmailJS error:", error);
+
+      //   setSubmitStatus("error");
+      //   setSubmitMessage(
+      //     "Sorry, your enquiry could not be sent. Please try again.",
+      //   );
+      // }
       console.error("EmailJS error:", error);
+      console.error("Error status:", error?.status);
+      console.error("Error details:", error?.text);
 
       setSubmitStatus("error");
       setSubmitMessage(
-        "Sorry, your enquiry could not be sent. Please try again.",
+        `Email failed: ${error?.text || error?.message || "Unknown error. Check the browser console."}`,
       );
     } finally {
       setIsSending(false);
