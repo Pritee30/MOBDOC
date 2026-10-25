@@ -33,18 +33,18 @@ const courseLinks = [
 const socialLinks = [
   {
     name: "Instagram",
-    url: "https://instagram.com/",
+    url: "https://instagram.com/anirudhashilavane",
     icon: faInstagram,
   },
   {
     name: "Facebook",
-    url: "https://facebook.com/",
+    url: "https://facebook.com/anirudha.shilavane",
     icon: faFacebook,
   },
   {
-    name: "YouTube",
-    url: "https://youtube.com/",
-    icon: faYoutube,
+    name: "WhatsApp",
+    url: "https://wa.me/917709815816",
+    icon: faWhatsapp,
   },
 ];
 
@@ -140,7 +140,7 @@ function Footer() {
             <ul className="space-y-4 text-sm">
               <li>
                 <a
-                  href="tel:+910000000000"
+                  href="tel:+91 7709815816"
                   className="flex items-start gap-3 transition-colors hover:text-emerald-400"
                 >
                   <FontAwesomeIcon
@@ -154,7 +154,7 @@ function Footer() {
 
               <li>
                 <a
-                  href="https://wa.me/910000000000"
+                  href="https://wa.me/917709815816"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 transition-colors hover:text-emerald-400"
@@ -170,7 +170,7 @@ function Footer() {
 
               <li>
                 <a
-                href="https://www.google.com/maps/place/Mob+Doc+Mobile+Repair+%26+Training+Institute/@18.1627173,74.5872591,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc3a17f9fd122c7:0x112b4e5448b821d8!8m2!3d18.1627173!4d74.5872591!16s%2Fg%2F11f9j8h7h7?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/place/Mob+Doc+Mobile+Repair+%26+Training+Institute/@18.1627173,74.5872591,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc3a17f9fd122c7:0x112b4e5448b821d8!8m2!3d18.1627173!4d74.5872591!16s%2Fg%2F11f9j8h7h7?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 transition-colors hover:text-emerald-400"
@@ -180,7 +180,10 @@ function Footer() {
                     className="text-xl text-emerald-400 transition-colors hover:text-white"
                   />
                   {/* <span className="text-emerald-400">⌖</span> */}
-                  <span>near VirShaiv Mangal Karyalay, Sahyog Society, Baramati, Maharashtra 413102</span>
+                  <span>
+                    near VirShaiv Mangal Karyalay, Sahyog Society, Baramati,
+                    Maharashtra 413102
+                  </span>
                 </a>
               </li>
             </ul>
