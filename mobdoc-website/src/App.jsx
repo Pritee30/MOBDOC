@@ -1,4 +1,4 @@
-import { Route,  Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Hero from "./components/home/Hero";
 import Navbar from "./components/layout/Navbar";
@@ -13,17 +13,16 @@ function App() {
   return (
     <div className="min-h-screen flex-col bg-[#080D0C]">
       <Navbar />
-      <main> 
-       
+      <main>
         <Routes>
           <Route path="/" element={<Hero />} />
-            <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        
+
         <Footer />
       </main>
     </div>
