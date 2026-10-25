@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -422,15 +423,15 @@ function Services() {
             and service charges.
           </p>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="mt-7 inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-950"
           >
             Contact MOBDOC
             <span className="ml-2" aria-hidden="true">
               →
             </span>
-          </a>
+          </Link>
         </div>
       </section>
     </main>
