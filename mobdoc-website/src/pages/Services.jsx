@@ -334,13 +334,13 @@ function Services() {
                   {service.description}
                 </p>
 
-                <a
-                  href="#service-enquiry"
+                <Link
+                  to="/services"
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald-400 transition hover:text-emerald-300"
                 >
                   Enquire About Service
                   <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </article>
             ))}
           </div>

@@ -17,7 +17,6 @@ function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080D0C]/95 backdrop-blur-xl">
       <nav className="relative mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-
         {/* Logo */}
         <Link
           to="/"
@@ -47,22 +46,27 @@ function Navbar() {
             <h2 className="text-2xl font-bold tracking-wide text-white">
               MOB<span className="text-emerald-400">DOC</span>
             </h2>
-            <p className="text-xs text-slate-400">
-              Repair • Learn • Build
-            </p>
+            <p className="text-xs text-slate-400">Repair • Learn • Build</p>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-6 lg:flex xl:gap-8">
           {links.map((link) => (
-            <Link
+            <NavLink
               key={link.path}
               to={link.path}
-              className="text-sm text-slate-300 transition hover:text-emerald-400"
+              end
+              className={({ isActive }) =>
+                `text-sm transition ${
+                  isActive
+                    ? "text-emerald-400"
+                    : "text-slate-300 hover:text-emerald-400"
+                }`
+              }
             >
               {link.label}
-            </Link>
+            </NavLink>
           ))}
 
           <Link
@@ -77,7 +81,9 @@ function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen((previous) => !previous)}
-          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            menuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={menuOpen}
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition hover:border-emerald-400 lg:hidden"
         >
@@ -108,8 +114,15 @@ function Navbar() {
                 <Link
                   key={link.path}
                   to={link.path}
+                  end
                   onClick={closeMenu}
-                  className="rounded-lg px-4 py-3 text-sm text-slate-300 transition hover:bg-emerald-400/10 hover:text-emerald-400"
+                  className={({ isActive }) =>
+                    `rounded-lg px-4 py-3 text-sm transition ${
+                      isActive
+                        ? "bg-emerald-400/10 text-emerald-400"
+                        : "text-slate-300 hover:bg-emerald-400/10 hover:text-emerald-400"
+                    }`
+                  }
                 >
                   {link.label}
                 </Link>

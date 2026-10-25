@@ -17,7 +17,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const quickLinks = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "/home" },
   { name: "About Us", path: "/about" },
   { name: "Our Services", path: "/services" },
   { name: "Contact Us", path: "/contact" },

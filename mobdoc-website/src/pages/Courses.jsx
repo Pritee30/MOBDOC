@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -289,15 +290,15 @@ function Courses() {
             available batches, fees, and admission details.
           </p>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="mt-7 inline-flex items-center justify-center rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-emerald-400"
           >
             Contact MOBDOC
             <span className="ml-2" aria-hidden="true">
               →
             </span>
-          </a>
+          </Link>
         </div>
       </section>
     </main>
