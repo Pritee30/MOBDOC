@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,11 +56,10 @@ function Navbar() {
             <NavLink
               key={link.path}
               to={link.path}
-              end
               className={({ isActive }) =>
                 `text-sm transition ${
                   isActive
-                    ? "text-emerald-400"
+                    ? "text-emerald-400 font-semibold" // Active hone par ye style lagegi
                     : "text-slate-300 hover:text-emerald-400"
                 }`
               }
@@ -111,21 +110,20 @@ function Navbar() {
           <div className="absolute left-0 right-0 top-full border-b border-white/10 bg-[#080D0C] p-4 shadow-2xl lg:hidden">
             <div className="flex flex-col gap-1">
               {links.map((link) => (
-                <Link
+                <NavLink
                   key={link.path}
                   to={link.path}
-                  end
                   onClick={closeMenu}
                   className={({ isActive }) =>
                     `rounded-lg px-4 py-3 text-sm transition ${
                       isActive
-                        ? "bg-emerald-400/10 text-emerald-400"
+                        ? "bg-emerald-400/20 text-emerald-400 font-medium" // Mobile active style
                         : "text-slate-300 hover:bg-emerald-400/10 hover:text-emerald-400"
                     }`
                   }
                 >
                   {link.label}
-                </Link>
+                </NavLink>
               ))}
 
               <Link
